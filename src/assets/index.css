@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.slider::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.slider::-webkit-scrollbar-track {
+  display: none;
+}
+
+.slider::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #272856;
+}
+
+
+.menu__items-hover {
+  @apply hover:cursor-pointer transition ease-in-out hover:bg-[#7b62ff26] hover:text-light-slat-Blue duration-300;
+}
