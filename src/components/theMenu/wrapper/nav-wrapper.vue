@@ -1,78 +1,5 @@
 <template>
-  <div class="flex flex-col w-3/12 px-10 py-8 dark:bg-dark">
-    <!--========== user ==========-->
-    <div class="flex w-full">
-      <div class="basis-1/4">
-        <img
-          :src="require('@/assets/img/1.jpg')"
-          alt=""
-          class="w-16 rounded-full"
-        />
-      </div>
-      <div class="basis-2/4">
-        <p class="text-[24px] font-semibold dark:text-white">Amir</p>
-        <p class="text-[14px] font-semibold dark:text-white">
-          Creator
-          <span class="text-bright-sun">
-            Pro
-            <i class="ri-add-line align-middle"></i>
-          </span>
-        </p>
-      </div>
-      <div class="basis-1/4 flex justify-end self-center">
-        <button class="">
-          <i class="ri-add-line text-[32px] text-light-indigo"></i>
-        </button>
-      </div>
-    </div>
-
-    <!--========== Ballance ==========-->
-    <div
-      class="w-full h-auto mt-6 py-8 flex flex-col text-center rounded-3xl relative dark:bg-light-slat-Blue"
-    >
-      <p class="text-[14px] font-semibold dark:text-melrose">Your Ballance</p>
-      <p class="text-[34px] font-semibold mt-4 z-10 dark:text-white">
-        2,401.02
-      </p>
-      <div class="flex justify-center mt-3 z-10">
-        <img
-          :src="require('@/assets/img/logos_ethereum.svg')"
-          alt=""
-          class="w-[10px]"
-        />
-        <p class="text-[15px] font-semibold ml-2 dark:text-melrose">ETH</p>
-      </div>
-      <img
-        :src="require('@/assets/img/Stastistic.png')"
-        alt=""
-        class="w-[215px] self-center -mt-5"
-      />
-      <img
-        :src="require('@/assets/img/Stastistic-bg.png')"
-        alt=""
-        class="w-[320px] absolute"
-      />
-
-      <div
-        class="w-[250px] h-14 flex justify-between items-center px-5 mt-5 self-center rounded-full dark:bg-light-indigo hover:cursor-pointer"
-      >
-        <div
-          class="w-6 h-6 rounded-full flex justify-center items-center dark:bg-bright-sun"
-        >
-          <i
-            class="ri-add-line text-xl align-middle dark:text-light-slat-Blue"
-          ></i>
-        </div>
-        <p class="text-[16px] font-semibold ml-3 dark:text-white">
-          Top Up Ballance
-        </p>
-
-        <i class="ri-arrow-right-s-line text-xl dark:text-white"></i>
-      </div>
-    </div>
-
-    <!--========== NAV ==========-->
-    <nav class="w-full flex flex-col mt-6 h-auto">
+  <nav class="w-full flex flex-col mt-6 h-auto">
       <ul class="list-none">
         <li
           class="flex items-center justify-between py-2 px-3 my-1 rounded-xl text-Amethyst-smoke menu__items-hover"
@@ -112,7 +39,7 @@
         </li>
 
         <li
-          class="flex items-center justify-between py-2 px-3 my-1 rounded-xl text-Amethyst-smoke menu__items-hover"
+          class="flex items-center justify-between py-2 px-3 my-1 rounded-xl text-Amethyst-smoke hover:cursor-pointer"
         >
           <div class="flex items-center">
             <i class="ri-arrow-down-s-line text-[20px]"></i>
@@ -152,12 +79,12 @@
         </div>
       </div>
     </nav>
-  </div>
 </template>
 
 <script>
 import { computed } from "vue";
 import { useStore } from "vuex";
+
 export default {
   setup() {
     const store = useStore();
@@ -174,4 +101,6 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+
+</style>

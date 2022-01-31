@@ -1,6 +1,5 @@
 <template>
-  <div class="flex justify-between mt-16">
-    <div class="flex flex-col w-[575px]">
+  <div class="flex flex-col w-[575px]">
       <!--========== Head ==========-->
       <div class="flex justify-between">
         <h1 class="text-white text-[32px] font-semibold">Featured Creators</h1>
@@ -59,62 +58,6 @@
       </div>
      
     </div>
-
-    <div class="flex flex-col w-[435px] bg-[#24284C] rounded-xl px-6 py-7">
-      <div class="flex justify-between">
-        <img
-          :src="require('@/assets/img/Featured-5.jpg')"
-          alt=""
-          class="object-cover rounded-xl w-[90px] h-[100px]"
-        />
-        <img
-          :src="require('@/assets/img/Featured-6.jpg')"
-          alt=""
-          class="object-cover rounded-xl w-[180px] h-[100px]"
-        />
-        <img
-          :src="require('@/assets/img/Featured-7.jpg')"
-          alt=""
-          class="object-cover rounded-xl w-[90px] h-[100px]"
-        />
-      </div>
-
-      <div class="flex flex-col">
-        <img
-          :src="require('@/assets/img/Ellipse-6.png')"
-          alt=""
-          class="w-[70px] h-[70px] rounded-full self-center -mt-10"
-        />
-
-        <div class="flex justify-between mt-5">
-          <div class="flex flex-col">
-            <div class="flex">
-              <h3 class="text-white text-[18px] font-semibold">
-                Samirah Rokni
-              </h3>
-              <img
-                :src="require('@/assets/img/ic_round-verified.svg')"
-                alt=""
-                class="ml-2"
-              />
-            </div>
-            <p class="text-[14px] text-regent-grey">@satlancer</p>
-          </div>
-
-          <div
-            class="flex justify-center items-center w-[95px] h-[40px] bg-light-slat-Blue rounded-full hover:cursor-pointer"
-          >
-            <i class="ri-add-line align-middle text-white"></i>
-            <p class="text-white font-semibold test-[14px]">Follow</p>
-          </div>
-        </div>
-        <p class="text-regent-grey text-[14px] mt-5">
-          Artist that archives Black Trans experince in Video games and
-          animation. Info@piqo.design
-        </p>
-      </div>
-    </div>
-  </div>
 </template>
 
 <script>
@@ -131,4 +74,6 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+
+</style>

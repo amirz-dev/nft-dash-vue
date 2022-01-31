@@ -125,7 +125,18 @@ const Store = createStore({
                 badge:'+6'
             }
         },
-    ]
+    ],
+    userSuggestion:{
+      name:'Samirah Rokni',
+      id:'@satlancer',
+      text:'Artist that archives Black Trans experince in Video games and animation. Info@piqo.design',
+      img:'Ellipse-6.png',
+      works:{
+        img1:'Featured-5.jpg',
+        img2:'Featured-6.jpg',
+        img3:'Featured-7.jpg',
+      }
+    }
     };
   },
   getters: {
@@ -141,7 +152,9 @@ const Store = createStore({
     featuredItems(state) {
       return state.featuredItems;
     },
-
+    userSuggestion(state){
+      return state.userSuggestion;
+    }
   },
 });
 

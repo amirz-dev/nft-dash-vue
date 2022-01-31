@@ -17,13 +17,22 @@
     </div>
 
     <!--========== Slider ==========-->
-    <div class="slider flex flex-nowrap gap-8 mt-4 pb-2 overflow-x-auto w-full">
-      
-          <slider
-            v-for="(slide, index) in sliders"
-            :key="index"
-            :slide="slide"
-          />
+    <div class="flex flex-nowrap gap-8 mt-4 pb-2 overflow-x-auto w-full">
+      <swiper
+        :slidesPerView="3"
+        :spaceBetween="30"
+        :freeMode="true"
+        :modules="modules"
+        class="mySwiper"
+      >
+        <swiper-slide
+          class="group min-w-[295px] h-[350px] rounded-xl overflow-hidden flex flex-col"
+          v-for="(slide, index) in sliders"
+          :key="index"
+        >
+          <slider :slide="slide" />
+        </swiper-slide>
+      </swiper>
     </div>
   </div>
 </template>
@@ -33,35 +42,30 @@ import { computed } from "vue";
 import { useStore } from "vuex";
 import slider from "./UI/slider-item.vue";
 
+import { Swiper, SwiperSlide } from "swiper/vue";
+
+// Import Swiper styles
+import "swiper/css";
+
+import "swiper/css/free-mode";
+
+// import required modules
+import { FreeMode } from "swiper";
 
 export default {
-  components: { slider, },
+  components: { slider, Swiper, SwiperSlide },
   setup() {
     const store = useStore();
 
     const sliders = computed(() => store.getters.sliders);
 
-    return { sliders, };
+    return { sliders, modules: [FreeMode] };
   },
 };
 </script>
 
 <style>
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
 .swiper-slide {
- display: flex;
-    gap: 30px;
+  flex-shrink: unset;
 }
-
-/* .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-
 </style>

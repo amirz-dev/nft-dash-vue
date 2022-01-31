@@ -82,9 +82,9 @@
 </template>
 
 <script>
-import Menu from "./components/theMenu.vue";
-import Trending from "./components/theTrending.vue";
-import Featured from "./components/theFeatured.vue";
+import Menu from "./components/theMenu/theMenu.vue";
+import Trending from "./components/theTrending/theTrending.vue";
+import Featured from "./components/theFeatured/theFeatured.vue";
 export default {
   name: "App",
   components: {
