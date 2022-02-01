@@ -2,15 +2,15 @@
   <div class="flex flex-col w-full mt-12">
     <!--========== Head ==========-->
     <div class="flex justify-between">
-      <h1 class="text-white text-[32px] font-semibold">Trending Auctions</h1>
+      <h1 class="text-[#131736] dark:text-white text-[32px] font-semibold">Trending Auctions</h1>
 
       <div
-        class="flex items-center rounded-xl px-5 hover:cursor-pointer transition ease-in-out hover:bg-[#272856] duration-300"
+        class="flex items-center rounded-xl px-5 hover:cursor-pointer transition ease-in-out hover:bg-[#7b62ff26] dark:hover:bg-[#272856] duration-300"
       >
         <p class="text-light-slat-Blue text-[16px] font-semibold">
           All Auctions
         </p>
-        <div class="px-2 py-1 bg-[#272856] rounded-full ml-2">
+        <div class="px-2 py-1 border border-[#EAEBEE] dark:border-none dark:bg-[#272856] rounded-full ml-2">
           <p class="text-light-slat-Blue text-[14px]">+32</p>
         </div>
       </div>
@@ -67,5 +67,6 @@ export default {
 <style>
 .swiper-slide {
   flex-shrink: unset;
+  overflow: visible !important;
 }
 </style>

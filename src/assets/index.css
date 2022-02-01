@@ -24,5 +24,5 @@ body::-webkit-scrollbar {
 
 
 .menu__items-hover {
-  @apply hover:cursor-pointer transition ease-in-out hover:bg-[#7b62ff26] hover:text-light-slat-Blue duration-300;
+  @apply hover:cursor-pointer transition ease-in-out hover:bg-[#7b62ff26] hover:text-light-slat-Blue hover:dark:text-light-slat-Blue duration-300;
 }

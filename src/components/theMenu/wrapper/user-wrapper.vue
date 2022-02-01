@@ -8,8 +8,8 @@
         />
       </div>
       <div class="basis-2/4">
-        <p class="text-[20px] xl:text-[24px] font-semibold dark:text-white">Amir</p>
-        <p class="text-[12px] xl:text-[14px] font-medium xl:font-semibold dark:text-white">
+        <p class="text-[20px] xl:text-[24px] font-semibold text-[#131736] dark:text-white">Amir</p>
+        <p class="text-[12px] xl:text-[14px] font-medium xl:font-semibold text-[#A0A2AE] dark:text-white">
           Creator
           <span class="text-bright-sun">
             Pro

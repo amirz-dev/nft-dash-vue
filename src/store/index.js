@@ -3,6 +3,7 @@ import { createStore } from "vuex";
 const Store = createStore({
   state() {
     return {
+      darkMode: false,
       sliders: [
         {
           img: "slider-1.jpg",
@@ -11,7 +12,7 @@ const Store = createStore({
           name: "An Interstellar Wanderer",
           seller: {
             id: "@ronanhunt88",
-            img: "Ellipse-1.png",
+            img: "user-1.jpg",
           },
         },
         {
@@ -21,7 +22,7 @@ const Store = createStore({
           name: "Pepe community on tour",
           seller: {
             id: "@huntlancer",
-            img: "Ellipse-2.png",
+            img: "user-2.jpg",
           },
         },
         {
@@ -31,7 +32,7 @@ const Store = createStore({
           name: "Mixed Girl Power",
           seller: {
             id: "@aslanruby",
-            img: "Ellipse-3.png",
+            img: "user-3.jpg",
           },
         },
         {
@@ -41,7 +42,7 @@ const Store = createStore({
           name: "An Interstellar Wanderer",
           seller: {
             id: "@ronanhunt88",
-            img: "Ellipse-1.png",
+            img: "user-1.jpg",
           },
         },
         {
@@ -51,7 +52,7 @@ const Store = createStore({
           name: "Pepe community on tour",
           seller: {
             id: "@huntlancer",
-            img: "Ellipse-2.png",
+            img: "user-2.jpg",
           },
         },
       ],
@@ -104,39 +105,39 @@ const Store = createStore({
           },
         },
       ],
-      featuredItems:[
+      featuredItems: [
         {
-            img:'Ellipse-4.png',
-            name:'Sam rolfeswit',
-            id:'@samrolfes',
-            works:{
-                img1:'Featured-1.jpg',
-                img2:'Featured-2.jpg',
-                badge:'+6'
-            }
+          img: "user-4.jpg",
+          name: "Sam rolfeswit",
+          id: "@samrolfes",
+          works: {
+            img1: "Featured-1.jpg",
+            img2: "Featured-2.jpg",
+            badge: "+6",
+          },
         },
         {
-            img:'Ellipse-5.png',
-            name:'Andrew Benson',
-            id:'@pixlpa',
-            works:{
-                img1:'Featured-3.jpg',
-                img2:'Featured-4.jpg',
-                badge:'+6'
-            }
+          img: "user-5.jpg",
+          name: "Andrew Benson",
+          id: "@pixlpa",
+          works: {
+            img1: "Featured-3.jpg",
+            img2: "Featured-4.jpg",
+            badge: "+6",
+          },
         },
-    ],
-    userSuggestion:{
-      name:'Samirah Rokni',
-      id:'@satlancer',
-      text:'Artist that archives Black Trans experince in Video games and animation. Info@piqo.design',
-      img:'Ellipse-6.png',
-      works:{
-        img1:'Featured-5.jpg',
-        img2:'Featured-6.jpg',
-        img3:'Featured-7.jpg',
-      }
-    }
+      ],
+      userSuggestion: {
+        name: "Samirah Rokni",
+        id: "@satlancer",
+        text: "Artist that archives Black Trans experince in Video games and animation. Info@piqo.design",
+        img: "user-6.jpg",
+        works: {
+          img1: "Featured-5.jpg",
+          img2: "Featured-6.jpg",
+          img3: "Featured-7.jpg",
+        },
+      },
     };
   },
   getters: {
@@ -152,9 +153,17 @@ const Store = createStore({
     featuredItems(state) {
       return state.featuredItems;
     },
-    userSuggestion(state){
+    userSuggestion(state) {
       return state.userSuggestion;
-    }
+    },
+    darkMode(state) {
+      return state.darkMode;
+    },
+  },
+  mutations: {
+    darkMode(state, payload) {
+      state.darkMode = payload;
+    },
   },
 });
 

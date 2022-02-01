@@ -2,7 +2,7 @@
   <nav class="w-full flex flex-col mt-6 h-auto">
       <ul class="list-none">
         <li
-          class="flex items-center justify-between py-2 px-3 my-1 rounded-xl text-Amethyst-smoke menu__items-hover"
+          class="flex items-center justify-between py-2 px-3 my-1 rounded-xl first:text-light-slat-Blue first:dark:text-light-slat-Blue menu__items-hover text-[#555D68] dark:text-Amethyst-smoke "
           v-for="(item, index) in menuItems"
           :key="index"
         >
@@ -10,8 +10,8 @@
             <i class="text-[18px] xl:text-[20px]" :class="item.icon"></i>
             <p class="text-[14px] ml-3 xl:text-[18px] xl:ml-5 font-semibold">{{ item.text }}</p>
           </div>
-          <div v-if="item.badge.status" class="px-3 bg-black-Eel rounded-full">
-            <p class="text-bright-sun text-[15px] font-semibold">
+          <div v-if="item.badge.status" class="px-3 bg-bright-sun dark:bg-black-Eel rounded-full">
+            <p class="text-white dark:text-bright-sun text-[15px] font-semibold">
               {{ item.badge.text }}
             </p>
           </div>
@@ -22,7 +22,7 @@
 
       <ul class="list-none">
         <li
-          class="flex items-center justify-between py-2 px-3 my-1 rounded-xl text-Amethyst-smoke menu__items-hover"
+          class="flex items-center justify-between py-2 px-3 my-1 rounded-xl text-[#555D68] dark:text-Amethyst-smoke menu__items-hover"
           v-for="(item, index) in myProfileItems"
           :key="index"
         >
@@ -32,7 +32,7 @@
           </div>
           <div
             v-if="item.badge.status"
-            class="px-2 py-1 rounded-full bg-cloud-burst"
+            class="px-2 py-1 rounded-full bg-[#F2F2F2] dark:bg-cloud-burst"
           >
             <p class="text-[12px] font-semibold">{{ item.badge.text }}</p>
           </div>
@@ -53,27 +53,28 @@
       </ul>
 
       <div
-        class="mt-10 flex items-center justify-between py-2 px-3 my-1 text-Amethyst-smoke"
+        class="mt-10 flex items-center justify-between py-2 px-3 my-1 text-[#555D68] dark:text-Amethyst-smoke"
       >
         <div class="flex items-center">
           <i class="ri-haze-line text-[18px] xl:text-[20px]"></i>
           <p class="text-[14px] ml-3 xl:text-[18px] xl:ml-5 font-semibold">Light mode</p>
         </div>
         <div class="flex items-center">
-          <label for="toggleB" class="flex items-center cursor-pointer">
+          <label @click="darkModeInput" class="flex items-center cursor-pointer">
             <!-- toggle -->
             <div
-              class="relative flex items-center justify-between bg-cloud-burst w-[60px] h-8 px-2 rounded-full"
+              class="relative flex items-center justify-between bg-[#F6F6F6] dark:bg-cloud-burst w-[60px] h-8 px-2 rounded-full"
             >
-              <input type="checkbox" id="toggleB" class="sr-only" />
+              <!-- <input type="checkbox"  class="sr-only" /> -->
 
               <!-- dot -->
               <div
-                class="dot absolute left-0.5 bg-dark w-7 h-7 rounded-full transition"
+                class="dot absolute bg-[#FFFFFF] dark:bg-dark w-7 h-7 rounded-full"
+                :class="darkMode ? 'left-0.5 ' : 'right-0.5 '"
               ></div>
               <!-- line -->
-              <i class="ri-moon-fill text-light-slat-Blue text-[16px] z-20"></i>
-              <i class="ri-sun-line text-Amethyst-smoke text-[16px] z-20"></i>
+              <i class="ri-moon-fill text-[16px] z-20" :class="darkMode ? 'text-light-slat-Blue' : 'text-Amethyst-smoke'"></i>
+              <i class="ri-sun-line text-[16px] z-20" :class="darkMode ? 'text-Amethyst-smoke' : 'text-light-slat-Blue'"></i>
             </div>
           </label>
         </div>
@@ -93,9 +94,18 @@ export default {
 
     const myProfileItems = computed(() => store.getters.myProfileItems);
 
+    const darkMode = computed(() => store.getters.darkMode);
+
+    function darkModeInput(){
+      document.body.classList.toggle('dark')
+      store.commit('darkMode', !darkMode.value);
+    }
+
     return {
       menuItems,
       myProfileItems,
+      darkMode,
+      darkModeInput
     };
   },
 };
