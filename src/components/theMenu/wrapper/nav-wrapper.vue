@@ -74,7 +74,7 @@
               ></div>
               <!-- line -->
               <i class="ri-moon-fill text-[16px] z-20" :class="darkMode ? 'text-light-slat-Blue' : 'text-Amethyst-smoke'"></i>
-              <i class="ri-sun-line text-[16px] z-20" :class="darkMode ? 'text-Amethyst-smoke' : 'text-light-slat-Blue'"></i>
+              <i class="ri-sun-fill text-[16px] z-20" :class="darkMode ? 'text-Amethyst-smoke' : 'text-light-slat-Blue'"></i>
             </div>
           </label>
         </div>

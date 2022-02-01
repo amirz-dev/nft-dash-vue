@@ -20,6 +20,7 @@ export default {
   components:{
     User, Ballance, Nav
   },
+  
 };
 </script>
 

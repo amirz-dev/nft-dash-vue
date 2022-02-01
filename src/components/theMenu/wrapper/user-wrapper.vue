@@ -18,9 +18,9 @@
         </p>
       </div>
       <div class="basis-1/4 flex justify-end self-center">
-        <button class="">
-          <i class="ri-add-line text-[32px] text-light-indigo"></i>
-        </button>
+        <a href="https://github.com/amirz-dev" target="_blank" class="hover:cursor-pointer">
+          <i class="ri-github-line text-[32px] text-light-indigo"></i>
+        </a>
       </div>
     </div>
 </template>
