@@ -7,8 +7,8 @@
           :key="index"
         >
           <div class="flex items-center">
-            <i class="text-[20px]" :class="item.icon"></i>
-            <p class="text-[18px] font-semibold ml-5">{{ item.text }}</p>
+            <i class="text-[18px] xl:text-[20px]" :class="item.icon"></i>
+            <p class="text-[14px] ml-3 xl:text-[18px] xl:ml-5 font-semibold">{{ item.text }}</p>
           </div>
           <div v-if="item.badge.status" class="px-3 bg-black-Eel rounded-full">
             <p class="text-bright-sun text-[15px] font-semibold">
@@ -27,8 +27,8 @@
           :key="index"
         >
           <div class="flex items-center">
-            <i class="text-[20px]" :class="item.icon"></i>
-            <p class="text-[18px] font-semibold ml-5">{{ item.text }}</p>
+            <i class="text-[18px] xl:text-[20px]" :class="item.icon"></i>
+            <p class="text-[14px] ml-3 xl:text-[18px] xl:ml-5 font-semibold">{{ item.text }}</p>
           </div>
           <div
             v-if="item.badge.status"
@@ -42,9 +42,9 @@
           class="flex items-center justify-between py-2 px-3 my-1 rounded-xl text-Amethyst-smoke hover:cursor-pointer"
         >
           <div class="flex items-center">
-            <i class="ri-arrow-down-s-line text-[20px]"></i>
+            <i class="ri-arrow-down-s-line text-[18px] xl:text-[20px]"></i>
             <p
-              class="text-[12px] font-semibold ml-5 uppercase text-light-slat-Blue"
+              class="text-[12px] font-semibold ml-3 xl:ml-5 uppercase text-light-slat-Blue"
             >
               Show More
             </p>
@@ -56,8 +56,8 @@
         class="mt-10 flex items-center justify-between py-2 px-3 my-1 text-Amethyst-smoke"
       >
         <div class="flex items-center">
-          <i class="ri-haze-line text-[20px]"></i>
-          <p class="text-[18px] font-semibold ml-5">Light mode</p>
+          <i class="ri-haze-line text-[18px] xl:text-[20px]"></i>
+          <p class="text-[14px] ml-3 xl:text-[18px] xl:ml-5 font-semibold">Light mode</p>
         </div>
         <div class="flex items-center">
           <label for="toggleB" class="flex items-center cursor-pointer">

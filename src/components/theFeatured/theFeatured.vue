@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between mt-12">
+  <div class="flex flex-col gap-5 2xl:flex-row justify-between mt-12">
     <Featured/>
 
     <!-- User suggestion -->

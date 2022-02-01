@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col w-3/12 px-10 py-8 dark:bg-dark">
+  <div class="hidden lg:flex flex-col w-3/12 px-5 xl:px-10 py-8 dark:bg-dark">
     <!--========== user ==========-->
     <User/>
 

@@ -4,7 +4,7 @@
     <Menu />
 
     <!--========== Main ==========-->
-    <div class="w-9/12 flex flex-col h-1/1 pl-16 py-8 pr-10 dark:bg-ebony-clay">
+    <div class="w-full lg:w-9/12 flex flex-col h-1/1 pl-10 py-8 pr-5 xl:pr-10 dark:bg-ebony-clay">
       <!--========== Head ==========-->
       <div class="flex justify-between items-center">
         <div class="flex flex-col">
@@ -28,9 +28,9 @@
           </div>
         </div>
 
-        <div class="flex items-center">
+        <div class="hidden lg:flex items-center">
           <!--========== Toggle ==========-->
-          <div class="flex items-center">
+          <div class="flex items-center ">
             <label for="toggleC" class="flex items-center cursor-pointer">
               <!-- toggle -->
               <div
@@ -51,7 +51,7 @@
             </label>
           </div>
 
-          <div class="ml-16 flex gap-5">
+          <div class="xl:ml-16 lg:ml-5 flex gap-5">
             <div
               class="w-[52px] h-[52px] border-2 border-cloud-burst rounded-full flex justify-center items-center menu__items-hover dark:text-white"
             >
@@ -70,7 +70,16 @@
             </div>
           </div>
         </div>
+        
+      <div class="flex lg:hidden ">
+        <div
+              class="w-[52px] h-[52px] border-2 border-cloud-burst rounded-full flex justify-center items-center menu__items-hover dark:text-white"
+            >
+              <i class="ri-menu-2-line text-[21px]"></i>
+            </div>
       </div>
+      </div>
+
 
       <!--========== Trending ==========-->
       <Trending />

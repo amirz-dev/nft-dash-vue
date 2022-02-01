@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col w-[575px]">
+  <div class="flex flex-col w-full 2xl:w-[575px]">
       <!--========== Head ==========-->
       <div class="flex justify-between">
         <h1 class="text-white text-[32px] font-semibold">Featured Creators</h1>
@@ -14,8 +14,9 @@
       </div>
 
       <!--========== boxs ==========-->
+      <div class="flex flex-col xl:flex-row 2xl:flex-col gap-5 mt-5">
       <div
-        class="flex justify-between items-center w-full h-[112px] rounded-xl bg-[#24284C] mt-5 px-6"
+        class="flex justify-between items-center xl:w-1/2 lg:w-full 2xl:w-full h-[112px] rounded-xl bg-[#24284C] px-6"
         v-for="(item, index) in featuredItems" :key="index"
       >
         <div class="flex items-center">
@@ -56,7 +57,7 @@
           </div>
         </div>
       </div>
-     
+     </div>
     </div>
 </template>
 

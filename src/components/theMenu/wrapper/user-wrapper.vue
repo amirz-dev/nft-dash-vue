@@ -1,5 +1,5 @@
 <template>
-   <div class="flex w-full">
+   <div class="flex w-full gap-3">
       <div class="basis-1/4">
         <img
           :src="require('@/assets/img/1.jpg')"
@@ -8,8 +8,8 @@
         />
       </div>
       <div class="basis-2/4">
-        <p class="text-[24px] font-semibold dark:text-white">Amir</p>
-        <p class="text-[14px] font-semibold dark:text-white">
+        <p class="text-[20px] xl:text-[24px] font-semibold dark:text-white">Amir</p>
+        <p class="text-[12px] xl:text-[14px] font-medium xl:font-semibold dark:text-white">
           Creator
           <span class="text-bright-sun">
             Pro
