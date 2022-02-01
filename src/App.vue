@@ -8,8 +8,8 @@
     <Main/>
     
   </div>
-  <div class="flex" v-else>
-    <h2>Sorry this app not Supported mobile Devices</h2>
+  <div class="w-full h-screen flex justify-center items-center bg-dark" v-else>
+    <h2 class="text-white font-semibold text-[24px]" >Sorry, this app not Supported mobile Devices</h2>
   </div>
   </div>
 </template>
