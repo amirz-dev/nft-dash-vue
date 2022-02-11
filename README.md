@@ -1,24 +1,27 @@
-# nft-dash-vue
+
+![Logo](https://cdn.dribbble.com/users/1619633/screenshots/17075196/media/28d06e123d4ce56a6e428bb474c6e8cd.png)
+
+
+# NFT Dashboard
+
+A simple dashboard project modeled on a dribbble site design written using Vue.js. [Preview](https://nft-dash-vue.vercel.app/)
 
 ## Project setup
-```
+```bash
 npm install
-```
 
-### Compiles and hot-reloads for development
-```
+//Compiles and hot-reloads for development
 npm run serve
-```
 
-### Compiles and minifies for production
-```
+//Compiles and minifies for production
 npm run build
-```
 
-### Lints and fixes files
-```
+//Lints and fixes files
 npm run lint
 ```
+    
+## Lessons Learned
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Redesign of the design in Figma,
+
+Design programming and use different libraries
