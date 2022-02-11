@@ -10,11 +10,15 @@ A simple dashboard project modeled on a dribbble site design written using Vue.j
 ## Lessons Learned
 
 -Redesign of the design in Figma,
+
 -Design programming and use different libraries
 
 >js freamwork: [Vue.js](https://vuejs.org/)
+>
 >CSS framework: [tailwindcss](https://tailwindcss.com/)
+>
 >icons: [remixicons](https://remixicon.com/)
+>
 >Slider: [Swiper.js](https://swiperjs.com/)
 
 ## Project setup
