@@ -4,7 +4,7 @@
 
 # NFT Dashboard
 
-A simple dashboard project modeled on a dribbble site design written using Vue.js. [Preview](https://nft-dash-vue.vercel.app/)
+A simple dashboard project modeled on a shot in dribbble written using Vue.js. [Preview](https://nft-dash-vue.vercel.app/)
 
     
 ## Lessons Learned
