@@ -24,13 +24,16 @@ A simple dashboard project modeled on a dribbble site design written using Vue.j
 ## Project setup
 ```bash
 npm install
-
-//Compiles and hot-reloads for development
+```
+Compiles and hot-reloads for development
+```bash
 npm run serve
-
-//Compiles and minifies for production
+```
+Compiles and minifies for production
+```bash
 npm run build
-
-//Lints and fixes files
+```
+Lints and fixes files
+```bash
 npm run lint
 ```
